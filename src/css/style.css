@@ -1,0 +1,272 @@
+@font-face {
+    font-family: 'sono';
+    src: url(../fontes/Sono-VariableFont_MONO\,wght.ttf);
+}
+
+* {
+    font-family: 'sono';
+}
+
+body {
+    background-color: #1C1C1C;
+}
+
+/*----------------------HEADER-------------------------*/
+
+header {
+    background-color: rgba(0, 0, 0, 0.3);
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 200px;
+    position: relative;
+    z-index: 1;
+}
+
+header .kg-container img {
+    width: 280px;
+    cursor: pointer;
+}
+
+header .kg-container img:hover {
+    filter: brightness(80%);
+}
+
+nav .menu {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    right: 65px;
+}
+
+nav .menu li a {
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.2s ease-in-out;
+}
+
+nav .menu li a:hover {
+    filter: brightness(80%);
+    text-decoration: underline;
+}
+
+header .social-icons {
+    display: flex;
+    gap: 30px;
+}
+
+header .social-icons img {
+    width: 25px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+header .social-icons img:hover {
+    transform: scale(1.07);
+}
+
+/*----------------------PHASMOPHOBIA-------------------------*/
+
+.background-container {
+    background-image: url(../img/living-room.jpeg);
+    background-size: cover;
+    background-position: 0px -25px;
+    width: 100%;
+    height: 765px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+}
+
+.background-container .content::before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.background-container .content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-container .content img {
+    width: 785px;
+    position: relative;
+    bottom: 60px;
+}
+
+.background-container .content a {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 500;
+    position: relative;
+    bottom: 20px;
+}
+
+/*--------------------GALLERY-----------------------*/
+
+.gallery-container {
+    position: relative;
+    top: 635px;
+    background: rgb(0, 0, 0);
+    width: 100%;
+    height: 765px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    gap: 115px;
+}
+
+.gallery-container div {
+    height: 640px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.gallery-container img {
+    width: 315px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+}
+
+.gallery-container h3 {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.gallery-container p {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 22px;
+    width: 313px;
+}
+
+/*--------------------FEEDBACKS-----------------------*/
+
+.feedback-background {
+    background-image: url(../img/baby-room.jpg);
+    background-size: cover;
+    background-position: 0px -170px;
+    position: relative;
+    top: 635px;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-background .feedback {
+    color: #ffffff;
+    margin-left: 210px;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.feedback-background .feedback h4 {
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.feedback-background .feedback p {
+    font-size: 32px;
+    font-weight: 500;
+    width: 790px;
+}
+
+.feedback-background .feedback .rockpaper {
+    margin-left: 360px;
+}
+
+/*--------------------AWARDS-----------------------*/
+
+.awards-container {
+    position: relative;
+    top: 635px;
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.awards-container .awards {
+    display: flex;
+    gap: 30px;
+}
+
+.awards-container .awards img {
+    width: 220px;
+}
+
+/*--------------------FOOTER-----------------------*/
+
+.footer-container {
+    width: 100%;
+    height: 360px;
+    position: relative;
+    top: 635px;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 280px;
+}
+
+.footer-container .footer-left {
+    display: flex;
+    flex-direction: column;
+    width: 730px;
+}
+
+.footer-container .footer-left p {
+    line-height: 24px;
+    margin-top: 10px;
+}
+
+.footer-container .footer-left p:nth-child(4) {
+    font-weight: 600;
+}
+
+.footer-container .footer-left p:nth-child(5) {
+    font-weight: 600;
+}
+
+.footer-container .footer-left p span {
+    font-weight: 300;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.footer-container .footer-left .footer-social img {
+    width: 30px;
+    cursor: pointer;
+}
+
+.footer-container .footer-right {
+    display: flex;
+    text-align: right;
+}
+
+.footer-container .footer-right a {
+    line-height: 38px;
+    text-decoration: underline;
+}
